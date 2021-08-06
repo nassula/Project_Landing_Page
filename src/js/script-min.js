@@ -1,0 +1,1 @@
+$(".next").on("click",function(){let m=$("#name").val(),l=$("#email").val();if(""==m)return!1;$(".formName").html(m),$(".formEmail").html(l),$("#form_01").hide(),$("#form_02").show()});

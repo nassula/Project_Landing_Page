@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!--Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico" title="Favicon"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthMax - Health Insurance</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/zepto-min.js"></script>
+</head>
+<body>
+    <!--Section NavBar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#intro-right"><img class="logo" src="img/logo1.png" alt="HealthMax | Logo" title="HealthMax | Logo"></a> 
+        </nav>
+    </header>
+    <!--End Section NavBar-->
+
+    <!-- Section Intro -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div id="intro-left" class="col-12 col-md-6 col-lg-7">
+                    <h1 class="mb-4 mb-md-0">Now is the time to start caring about <span class="textBG">your health</span></h1>
+                    <p class="d-none d-md-block">HealthMax is a leading health insurance platform which offers amazing possibilities for your health</p>
+                    <button onclick="window.location.href='#intro-right'" class="cta-blue d-none d-md-block">Know More <i class="fas fa-angle-right"></i></button>
+                </div> 
+                <div id="intro-right" class="col-12 col-md-6 col-lg-5">
+                    <div class="formBG">
+                        <form id="form_01">
+                            <h2>Ensure the health of those you love</h2>
+                            <div class="row">
+                                <div class="col-12 col-xl">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <input type="text" id="name" name="fullname" class="form-control" required placeholder="ex. John">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
+                                        <input type="date" name="birthdate" data-mask="00/00/0000" maxlength="8" autocomplete="off" class="form-control" placeholder="ex. 11/05/1991">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-xl">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" id="email" name="email" class="form-control" placeholder=" ex. email@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl">
+                                    <div class="form-group">
+                                        <label>Phone Number</label>
+                                        <input type="text" name="phonenumber" onkeypress="$(this).mask('(000) 0000-0000')"class="form-control" placeholder="ex. 123-3256-6598">
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="return false;" class="cta-orange next">Get Offer Now <i class="fas fa-angle-right"></i></button>
+                        </form>
+                        <form id="form_02">
+                            <h2>Congratulations</h2>
+                            <p id="SuccessMessage" class="mb-4">Thanks <strong class="formName">FULL NAME</strong> for registering! Soon we will contact you by <strong class="formEmail">EMAIL</strong> with more information.</p>
+                        </form>
+                    </div>
+                    <p class="d-block d-md-none">HealthMax is a leading health insurance platform which offers amazing possibilities for your health</p>
+                    <button onclick="window.location.href='#intro-right'" class="cta-blue d-block d-md-none">Know More <i class="fas fa-angle-right"></i></button>                    
+                </div>           
+            </div>
+        </div>
+    </section>
+    <!-- end of Intro -->
+
+    <!--Section Content -->
+    <section id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid mb-4 mb-lg-0" src="img/content.jpg" alt="HealthMax - Three Doctors" title="HealthMax - Three Doctors">
+                </div>
+                <div class="col-12 col-lg-6 alignCenter">
+                    <h2>HealthMax is here to help you increase your life's quality</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales dolor at mollis blandit. Mauris aliquet maximus fringilla. Vivamus a iaculis nunc. Proin faucibus arcu mollis, dignissim quam sed, fringilla nisl. Sed et vulputate diam. Nulla facilisi. Nulla facilisi.</p>
+                    <button class="cta-blue" onclick="window.location.href='#intro-right'">Know More <i class="fas fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content2">
+        <h2>Now is the time to relax with your health</h2>
+        <button class="cta-blue" onclick="window.location.href='#intro-right'">Know More <i class="fas fa-angle-right"></i></button>
+    </section>
+    <!-- end of Content -->
+
+    <!--Pricing Tables-->
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>YOUR CHOICE</h3>
+                    <h2>We have the right plan for you</h2>
+                </div>              
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="colprice">
+                        <h3>Starter</h3>
+                        <p class="p-price">The standard version</p>
+                        <h4 class="price-value"><span class="span-dollar">$</span>190</h4>
+                        <p class="p-price">Lorem ipsum dolor sit amet, consectetur</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                        </ul>
+                        <button onclick="window.location.href='#intro-right'" class="transparentButton">BUY NOW</button>
+                    </div>                  
+                </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <div class="colprice">
+                        <h3>BOX</h3>
+                        <p class="p-price">The box version</p>
+                        <h4 class="price-value"><span class="span-dollar">$</span>290</h4>
+                        <p class="p-price">Lorem ipsum dolor sit amet, consectetur</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                        </ul>
+                        <button onclick="window.location.href='#intro-right'" class="transparentButton">BUY NOW</button>
+                    </div>                  
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="colprice">
+                        <h3>FAMILY</h3>
+                        <p class="p-price">The family version</p>
+                        <h4 class="price-value"><span class="span-dollar">$</span>390</h4>
+                        <p class="p-price">Lorem ipsum dolor sit amet, consectetur</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                            <li><i class="fas fa-check"></i> Lorem ipsum</li>
+                        </ul>
+                        <button onclick="window.location.href='#intro-right'" class="transparentButton">BUY NOW</button>
+                    </div>                  
+                </div>                  
+            </div>            
+        </div>
+    </section>
+    <!--End of Pricing Tables-->
+
+   
+    <!-- Footer -->
+    <footer class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright ©2021 <a href="#intro-right">HealthMax</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Footer -->
+    <script src="js/script-min.js"></script>
+</body>
+</html>
